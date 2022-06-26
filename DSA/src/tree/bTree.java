@@ -28,7 +28,7 @@ public class bTree {
 
     }
 
-    static void inOrder(Node root) {
+    public static void inOrder(Node root) {
 		if(root == null) return;
 		
 		inOrder(root.left);

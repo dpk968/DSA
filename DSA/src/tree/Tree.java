@@ -2,6 +2,8 @@ package tree;
 
 import java.util.Scanner;
 
+
+
 public class Tree {
 	
 	static Scanner sc = null;
@@ -59,13 +61,16 @@ public class Tree {
 		postOrder(root.right);
 		System.out.print(root.data+" ");
 	}
-}
-
-class Node {
-	Node left, right;
-	int data;
 	
-	public Node(int data) {
-		this.data = data;
+	public static class Node{
+		int data;
+		Node left,right;
+		
+		public Node(int data){
+			this.data = data;
+			left=null;
+			right = null;
+		}
 	}
 }
+

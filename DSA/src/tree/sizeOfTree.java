@@ -1,7 +1,6 @@
 package tree;
 
-import tree.bTree.Node;
-
+import tree.bTree.*;
 public class sizeOfTree {
 
 	public static void main(String[] args) {

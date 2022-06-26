@@ -1,9 +1,11 @@
 package tree;
 
+import tree.bTree.*;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
-import tree.bTree.Node;
+
 
 public class rightView {
 
@@ -20,7 +22,7 @@ public class rightView {
         tree.add(4);
 
         
-        
+        System.out.print("Right View Of tree : ");
         printRightViewOfTree(tree.root);
 	}
 	

@@ -1,8 +1,8 @@
 package tree;
 
+import tree.bTree.*;
 import java.util.*;
 
-import tree.bTree.Node;
 
 public class leftView {
 	
@@ -20,13 +20,14 @@ public class leftView {
         tree.add(2);
         tree.add(4);
 
+        System.out.print("Left view of tree : ");
         
         printLeftViewOfTree(tree.root);
         
 
 	}
 	
-public static void printLeftViewOfTree(Node root) {
+public static void printLeftViewOfTree(tree.bTree.Node root) {
 		
 		Queue<Node> q = new LinkedList<>();
 		

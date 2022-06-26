@@ -1,7 +1,6 @@
 package tree;
 
-import tree.bTree;
-import tree.bTree.Node;
+import tree.bTree.*;
 
 public class heightOfTree {
     public static void main(String[] args) {
@@ -9,11 +8,10 @@ public class heightOfTree {
         bTree tree = new bTree();
         tree.add(5);
         tree.add(6);
-        System.out.println("Height Of Tree");
         
-        int height = getHeight(tree.root);
-        System.out.println(height);
+        System.out.println("Height Of Tree : "+getHeight(tree.root));
         
+        System.out.print("Inorder Traversal : ");
         bTree.inOrder(tree.root);
     }
 

@@ -1,9 +1,10 @@
+
 package tree;
 
+import tree.bTree.*;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import tree.bTree.Node;
 
 public class LevelOrder {
 
@@ -31,19 +32,19 @@ public class LevelOrder {
 		Queue<Node> q = new LinkedList<>();
 		
 		q.add(root);
-//		q.add(null);
+		q.add(null);
 		
 		while(!q.isEmpty()) {
 			
 			Node current = q.poll();
-//			if(current==null) {
-//				if(q.isEmpty()){
-//					return;
-//				}else {
-//					System.out.println();
-//					q.add(null);
-//				}
-//			}else {
+			if(current==null) {
+				if(q.isEmpty()){
+					return;
+				}else {
+					System.out.println();
+					q.add(null);
+				}
+			}else {
 				System.out.print(current.data+" ");
 				
 				if(current.left!=null)
@@ -51,7 +52,7 @@ public class LevelOrder {
 				
 				if(current.right!=null)
 					q.add(current.right);
-//			}
+			}
 			
 			
 			

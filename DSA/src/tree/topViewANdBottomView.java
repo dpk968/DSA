@@ -2,11 +2,14 @@ package tree;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
+
+import tree.bTree.Node;
+
 import java.util.*;
 
 public class topViewANdBottomView {
 	
-	public static ArrayList<Integer> topView(tree.bTree.Node root){
+	public static void topView(Node root){
 		
 		Queue<Pair> q = new ArrayDeque<>();
 		Map<Integer,Integer> map = new TreeMap<>();
@@ -28,18 +31,18 @@ public class topViewANdBottomView {
 
 		}
 		
-		ArrayList<Integer> ans = new ArrayList<>();
+//		ArrayList<Integer> ans = new ArrayList<>();
 		
 		for(Map.Entry<Integer, Integer> entry :map.entrySet()) {
-			ans.add(entry.getValue());
+//			ans.add(entry.getValue());
 			System.out.print(entry.getValue()+" ");
 		}
 		
 		
-		return ans;
+//		return ans;
 	}
 	
-public static void bottomView(tree.bTree.Node root){
+public static void bottomView(Node root){
 		
 		Queue<Pair> q = new ArrayDeque<>();
 		Map<Integer,Integer> map = new TreeMap<>();
@@ -83,10 +86,9 @@ public static void bottomView(tree.bTree.Node root){
         tree.add(2);
         tree.add(4);
         
-//        topView(tree.root);
-        
         System.out.print("Top View of tree is : ");
         topView(tree.root);
+        
         
         System.out.println();
         
@@ -98,9 +100,9 @@ public static void bottomView(tree.bTree.Node root){
 
 	static class Pair{
 		int hd;
-		tree.bTree.Node node;
+		Node node;
 		
-		public Pair(int hd, tree.bTree.Node root) {
+		public Pair(int hd, Node root) {
 			this.node = root;
 			this.hd = hd;
 		}
