@@ -52,9 +52,6 @@ public class KthSmallestAndLargest {
 		int sizw = getSize(root);
 		int largest = sizw-k+1;
 		KthSmallest(root,largest,count2);
-		
-		
-		
 	}
 
 	

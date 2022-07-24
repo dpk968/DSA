@@ -20,6 +20,7 @@ public class Fair {
 //		System.out.println(obj.cd - obj.od);
 //		
 //		System.out.println(ans);
+		System.out.println("sdfgh");
 
 	}
 
